@@ -39,8 +39,8 @@ const page = () => {
       <div className="lower w-full h-fit flex flex-col md:px-52 items-center justify-center gap-5 ">
         
       <div className="input w-full h-full flex flex-row items-center justify-center gap-3">
-        <input onKeyDown={handleKeyDown} onClick={submitValue} className='p-2 shadow-sm shadow-black rounded-2xl h-16 w-full' type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} placeholder='Ask Whatever You Think...' />
-        <button className='h-16 py-2 px-5 bg-black text-white rounded-2xl cursor-pointer'>Search</button>
+        <input onKeyDown={handleKeyDown}  className='p-2 shadow-sm shadow-black rounded-2xl h-16 w-full' type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} placeholder='Ask Whatever You Think...' />
+        <button onClick={submitValue} className='h-16 py-2 px-5 bg-black text-white rounded-2xl cursor-pointer'>Search</button>
       </div>
       <div className="w-full tags flex flex-row items-center justify-center gap-5">
           <h1 className='py-2 md:px-5 px-3 bg-transparent shadow-sm shadow-amber-950 rounded-4xl'>Trending</h1>
